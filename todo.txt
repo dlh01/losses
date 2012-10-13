@@ -1,0 +1,28 @@
+# Shit to do for losses:
+
+* Familiarize myself with google fusion tables(gft)
+* Desktop widget to add new events to gft
+* Code specific to losses to snag info from gft, place graphs on page
+
+* Homepage design
+* Discuss other features
+
+Dave:
+  Need to think about data and backing store
+  All other stuff is secondary i.e. display
+  how are we putting data onto table?
+
+Me:
+  location (+ lat/lon), geocoding
+  search by country, time, region
+  week based system is scrapped. 
+  Stats?
+  Old data 
+
+Dave:
+  ap on browser, pops up with fields to fill in regarding the data for fusion tables
+
+
+Plans:
+  1. Google fusion tables interaction
+  2. Delivery widget
