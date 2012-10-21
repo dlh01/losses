@@ -1,7 +1,6 @@
 # Shit to do for losses:
 
 * Familiarize myself with google fusion tables(gft)
-* Desktop widget to add new events to gft
 * Code specific to losses to snag info from gft, place graphs on page
 
 * Homepage design
@@ -26,3 +25,22 @@ Dave:
 Plans:
   1. Google fusion tables interaction
   2. Delivery widget
+
+21 Oct 2012
+	Scrap OAuth2
+	possibly scrap the whole UI for data entry
+
+	what takes the most time: finding articles
+	"pathe the cow path" - make a sidewalk only after we know where we tread
+
+	data entry traditional workflow: 
+		find articles
+		scour for data
+		varify data
+		post
+	
+	homework:
+		find articles to scour over
+	goal: 
+		build regular expressions to do the scouring based on patterns we find
+
