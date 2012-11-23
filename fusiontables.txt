@@ -1,0 +1,18 @@
+Just some initial input, ideas, and learned concepts about google fusion tables (gft)
+
+Service requires authentication
+
+RESTful service. Start with get:
+  
+Requests for data must be had with OAuth2.0, and must have been registered with google
+
+API Key= AIzaSyBjFERCVuTDF8IGjaGx1XhYQ7HfzUxvpRs
+API name = losses-of-life
+
+All calls to the sql server are simply tagged to the end of the url. Template looks like this:
+https://www.googleapis.com/fusiontables/v1/query?sql=SELECT ROWID FROM {tableId&key}={your_API_key}
+
+Series of steps required before gft will allow changes to be made
+see oauth2.0
+
+

@@ -1,0 +1,14 @@
+***** (count; date (DD MMM YY); place (specific, general); Details (free text))
+***** (details) 5 dead; 01 NOV 12; Montreal, Canada; Dark and dreary night...
+*** (notes) didn't mention death count in date, only in headline...
+(article) 
+text
+text
+text
+text blah blah blah (you get it)
+(star counts matter: 5 = details, 3 = notes, 80 = end of article
+also, pay attention to the formats, death count should be a number followed
+by the word 'dead', semicolons should separate aspects of the details, notes
+are just there for my reference if there's anything in particular you think
+I ought to notice or deal with for the article)
+*******************************************************************************

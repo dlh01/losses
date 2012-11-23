@@ -1,0 +1,5 @@
+think about limiting the maximum sizes of the matches retrieved by regexes. 
+
+think about meta data, and title data: quicker than searching article
+
+remember date

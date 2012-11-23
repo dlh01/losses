@@ -1,0 +1,12 @@
+<xml version=2.0>
+	<story src="URL">
+		<details>
+			<count></count>
+			<date></date>
+			<loc></loc>
+		</details>
+		<text>
+			story text
+		</text>
+	</story>
+</xml>

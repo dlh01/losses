@@ -44,3 +44,7 @@ Plans:
 	goal: 
 		build regular expressions to do the scouring based on patterns we find
 
+4 Nov 2012
+	Learn about RSS feeds, google search through 
+	create an xml file for articles to go through testing
+	show dave RE examples for input, but explain them
