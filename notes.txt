@@ -3,3 +3,5 @@ think about limiting the maximum sizes of the matches retrieved by regexes.
 think about meta data, and title data: quicker than searching article
 
 remember date
+
+Just a thought about previous mapping program, why not only import the data for the countries that would have highlighting? The rest could be shown with a static map of matching size. 

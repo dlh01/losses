@@ -48,3 +48,9 @@ Plans:
 	Learn about RSS feeds, google search through 
 	create an xml file for articles to go through testing
 	show dave RE examples for input, but explain them
+
+23 Nov 2012
+	How do I search efficiently for placenames in an article?
+	List of countries
+	starting point, import list of specific place names?
+	has anyone else tackled this problem?

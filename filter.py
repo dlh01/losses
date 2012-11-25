@@ -8,6 +8,10 @@ import re
 
 # Get samples
 
+regions = []
+with open("list2.txt","r") as file:
+	regions = file.read().split("\n")[:-1]
+
 numbers = {
 	'three': '3',
 	'four': '4',
@@ -44,8 +48,9 @@ def getSamplesFromXML():
 		for grandchild in child:
 			if grandchild.name == "details":
 				ret['count'] = int(grandchild.count.get_text())
-				ret['date'] = grandchild.count.get_text()
-				ret['loc'] = grandchild.count.get_text()
+				ret['date'] = grandchild.date.get_text()
+				ret['loc'] = grandchild.loc.get_text()
+				print ret['loc']
 			else:
 				ret['text'] = grandchild.get_text().lower()
 		samples.append(ret)
@@ -66,7 +71,10 @@ countPatterns = [
 	re.compile(r"(\d+)[^\d.]*?(?:men|women|children|people)?[^\d.]*?(?:were|have been)? (?:killed|drowned|murdered)"),
 ]
 datePatterns = []
-descriptPatterns = []
+
+descriptPatterns = [
+	#re.compile(r"")
+]
 
 # Run articles through patterns
 def filter(article):
@@ -86,7 +94,10 @@ def dateFilter(article):
 	pass
 
 def locFilter(article):
-	pass
+	for region in regions:
+		if region in article:
+			print region
+			return region
 
 # Tests to ensure that there are patterns to describe various article types
 def countTest(sliceEnd):
@@ -99,7 +110,6 @@ def countTest(sliceEnd):
 			passed += 1
 		else:
 			print "Article {} Failed countTest".format(x+1)
-			pass
 	print passed * 100.0 / tot, "% Pass Rate"
 	return passed * 100.0 / tot
 
@@ -115,15 +125,27 @@ def countStats():
 	#print good
 	print "Spread: {} - {}".format(min(good), max(good))
 
-def test2():
-	pass
+def regionTest():
+	tot = 0
+	passed = 0
+	for x in range(len(samples)):
+		tot += 1
+		print samples[x]['loc']
+		if samples[x]['loc'] == locFilter(samples[x]['text']):
+			print "Article {} Passed locTest".format(x+1)
+			passed += 1
+		else:
+			print "Article {} Failed locTest".format(x+1)
+	print passed * 100.0 / tot, "% Pass Rate"
+	return passed * 100.0 / tot
 
 def test3():
 	pass
 
 if __name__ == "__main__":
 	getSamplesFromXML()
-	countTest(350)
+	#countTest(350)
+	regionTest()
 	#countStats()
 	#print test2()
 	#displaySamples()
